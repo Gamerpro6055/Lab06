@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <h1>Welcome to My Web Portfolio</h1>
+    <p>Learning HTML step-by-step</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#basics">Web Development Basics</a></li>
+        <li><a href="#sample">Sample Code</a></li>
+        <li><a href="#schedule">Weekly Schedule</a></li>
+        <li><a href="#details">Lab Details</a></li>
+        <li><a href="cotact"> Contact Me</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2 id="about">About Me</h2>
+        <figure>
+            <img src="https://img.freepik.com/premium-vector/print_1150217-428.jpg" alt="" width = 300>
+            <figcaption>This is a figure element with an image and caption.</figcaption>
+        </figure>
+        <p>
+        I love web development! <br>
+        It allows me to build cool things with just code. <br>
+        HTML uses tags like &lt;div&gt; and &lt;section&gt; to organize content.
+        </p>
+    </section>
+    
+    <section>
+        <h2 id="basics">Web Development Basics</h2>
+        <p>HTML stands for Hyper Text Markup Language. It structures content using tags like &lt;h1&gt;, &lt;p&gt;, and &lt;img&gt;.</p>
+    </section>
+    
+    <section>
+        <h2 id="sample">Sample Code</h2>
+        <p>
+            function hello() { <br>
+            &nbsp;&nbsp;console.log("Hello, world!"); <br>
+            } <br> <br>
+            <blockquote>"Web development is like magic — except it's real and you can learn it."</blockquote>
+        </p>
+    </section>
+    
+    <section>
+        <h2 id="schedule">Weekly Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>Lecture</td>
+                  <td>10:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>Lab</td>
+                  <td>2:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>Project Work</td>
+                  <td>1:00 PM</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"> &copy; 2025 Dylan Cohen - All rights reserved</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+    <section>
+        <h2 id="details">Lab Details</h2>
+        <p>Lab sessions take place every Wednesday in EnGeo2203 at 2:00 PM. Attendance is required.</p> <br>
+    </section>
+
+    <section>
+        <h2 id="contact">Contact Me</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <br> <br>
+            <label for="color">Favorite Color:</label> <br>
+            <input type="color" id="color">
+            <br> <br>
+            <label for="birthday">Birthday:</label> <br>
+            <input type="date" id="date">
+            <br> <br>
+            <label for="question"> Are you enjoying this lab?</label> <br>
+            <input type="radio" id="Yes"> Yes
+            <input type="radio" id="No"> No
+            <br> <br>
+            <label for="course"> Course:</label> <br>
+            <select name="course" id="name">
+                <option value="IT301">IT301</option>
+                <option value="IT333">IT333</option>
+                <option value="IT302">IT302</option>
+            </select>
+            <br><br>
+            <label for="fedback"> Any Feedback?</label> <br>
+            <textarea name="feedback" id="feedback"></textarea> <br>
+            <input type="submit">
+        </form>
+    </section>
+</main>
+<footer>
+    <p>
+        Made with &hearts; and HTML. <br>
+        &copy; 2025 Dylan Cohen - All rights reserved.<br>
+        Last updated:
+        <span id="current_date"></span>
+        <script>
+            document.getElementById("current_date").innerHTML =
+            new Date().toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+        </script>
+    </p>
+</footer>
+</body>
+</html>
